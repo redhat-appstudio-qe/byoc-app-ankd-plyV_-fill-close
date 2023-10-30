@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: jrsr
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-fcrg-tenant/byoc-app-ankd/jrsr@sha256:114165c26547aece2a4d8c78f13a062a92e881da8668be17bca4c42e5a528560
         name: my-java-quarkus
         ports:
         - containerPort: 8081
