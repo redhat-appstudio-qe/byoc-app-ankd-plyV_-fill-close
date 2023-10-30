@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jrsr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-fcrg-tenant/byoc-app-ankd/jrsr@sha256:114165c26547aece2a4d8c78f13a062a92e881da8668be17bca4c42e5a528560
+        name: my-java-quarkus
+        resources: {}
+status: {}
